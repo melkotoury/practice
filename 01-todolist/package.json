@@ -1,0 +1,32 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "This is a todo application developed in html , css , jquery , ajax , php and mysql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/melkotoury/practice/tree/master/01-todolist"
+  },
+  "keywords": [
+    "todolist",
+    "php-todolist",
+    "todoapp",
+    "todo",
+    "app",
+    "php",
+    "todo",
+    "app"
+  ],
+  "author": "Mahmoud El Kotoury",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-datetimepicker": "0.0.7",
+    "components-font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0"
+  }
+}
