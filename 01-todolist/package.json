@@ -24,8 +24,8 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "bootstrap-datetimepicker": "0.0.7",
     "components-font-awesome": "^4.7.0",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.47",
     "jquery": "^1.12.4",
     "normalize.css": "^7.0.0"
   }
