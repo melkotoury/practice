@@ -41,7 +41,7 @@
                   </div>                 
                    </div>
                   <div class="col col-xs-4 text-right">
-                    <button type="button" class="btn btn-sm btn-primary btn-create">Create New</button>
+                    <button type="button" onclick="location.href='create.html';" class="btn btn-sm btn-primary btn-create">Create New</button>
                   </div>
                 </div>
               </div>
@@ -72,10 +72,10 @@
                   <tbody>
                     <tr id="0">
                       <td align="center">
-                        <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
-                        <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
-                        <a class="btn btn-success"><em class="fa fa-check"></em></a>
-                        <a class="btn btn-info"><em class="fa fa-eye"></em></a>
+                        <a href="edit.html" class="btn btn-default"><em class="fa fa-pencil"></em></a>
+                        <a class="btn btn-danger"  data-toggle="modal" data-target="#deleteModal"><em class="fa fa-trash"></em></a>
+                        <a  class="btn btn-success"><em class="fa fa-check"></em></a>
+                        <a href="view.html" class="btn btn-info"><em class="fa fa-eye"></em></a>
                       </td>
                       <td class="hidden-xs">1</td>
                       <td>Todo1</td>
@@ -112,7 +112,34 @@
                 </div>
               </div>
             </div>
-          </div></div></div>
+          </div>
+      </div>
+    </div>
+
+
+
+    <!-- Delete Modal -->
+    <div id="deleteModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Delete Todo</h4>
+          </div>
+          <div class="modal-body">
+            <p>Are you sure you want to delete todo?.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-trash"></i> Delete</button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
           
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
