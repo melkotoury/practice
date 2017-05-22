@@ -95,3 +95,14 @@
 span.required{
 	color: red;
 }
+
+/********************************************************************************
+	2- Form Error Display
+
+*********************************************************************************/
+label.error{
+    color: red;
+    font-size: 0.8em;
+    margin-left: 4px;
+    transition-duration: 0.1s;
+}

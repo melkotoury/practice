@@ -23,6 +23,19 @@
     <h1 class="text-center">Todo List</h1>
     <div class="container">
       <div class="row">
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4">
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" class="active">Create</a></li>
+          </ol>
+        </div>
+        <div class="col-xs-4"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
         
         
         
@@ -37,19 +50,19 @@
               </div>
             </div>
             <div class="panel-body">
-              <form>
+              <form id="createForm">
                 <div class="form-group">
                   <label for="title">Todo Title: <span class="required">*</span></label>
-                  <input type="text" class="form-control" id="title" placeholder="Todo Name or Title" required="required">
+                  <input type="text" class="form-control" id="title" placeholder="Todo Name or Title" name="title" >
                 </div>
                 <div class="form-group">
                   <label for="body">Todo Body: <span class="required">*</span></label>
-                  <textarea class="form-control" rows="4" id="body" required="required"> </textarea>
+                  <textarea class="form-control" rows="4" id="body" name="body"> </textarea>
                 </div>
                 
                 <div class="form-group">
                   <label for="priority">Priority: <span class="required">*</span></label>
-                  <select class="form-control" id="priority">
+                  <select class="form-control" id="priority" name="priority">
                     <option>Low</option>
                     <option>Medium</option>
                     <option>High</option>
@@ -58,8 +71,8 @@
 
                 <div class="form-group">
                   <label for="deadline">Deadline: <span class="required">*</span></label>
-                <div class='input-group date' id='deadline'>
-                  <input type='text' class="form-control" />
+                <div class='input-group date' >
+                  <input type='text' class="form-control" id='deadline' name="deadline"/>
                   <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>
                     </span>
@@ -85,6 +98,8 @@
         <script src="node_modules/moment/min/moment.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="node_modules/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="node_modules/jquery-validation/dist/additional-methods.js"></script>
         <script src="js/script.js"></script>
       </body>
     </html>
