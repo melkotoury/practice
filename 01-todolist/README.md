@@ -1,5 +1,6 @@
 **Todo Application:**
-__ Features: __
+
+__Features:__
 1. Create Todo
 2. Edit Todo
 3. Delete Todo 
